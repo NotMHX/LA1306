@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/fav.ico" />
+    <title>All Sites [MiniLink]</title>
+  </head>
+  <body onload="fetchSites('all')">
+    <header>
+      <h1 class="headerTitle">MiniLink - All Sites</h1>
+      <p class="headerDesc">
+        Here's a list of all sites. You can visit them, delete them, or add a
+        new site.
+      </p>
+    </header>
+    <main>
+      <div class="section" id="websiteList"></div>
+      <div class="section">
+        <button
+          class="sectionBtn"
+          onclick="window.location.href='./index.html';"
+        >
+          Home
+        </button>
+        <button class="sectionBtn" onclick="window.location.href='./add.html';">
+          Add Site!
+        </button>
+      </div>
+      <script src="./javascript/listSites.js"></script>
+    </main>
+    <footer>
+      <p class="footerDesc">Made by Michael, Luca and Dominik for LA1304</p>
+      <a
+        href="https://github.com/NotMHX/LA1304"
+        class="footerLink"
+        target="_blank"
+        >Source Code</a
+      >
+    </footer>
+  </body>
+</html>

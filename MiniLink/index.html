@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/fav.ico" />
+    <title>Home [MiniLink]</title>
+  </head>
+  <body onload="fetchSites('index')">
+    <header>
+      <h1 class="headerTitle">MiniLink - The small link directory</h1>
+      <p class="headerDesc">
+        We have a small directory of web sites. Anyone can add a site!
+      </p>
+    </header>
+    <main>
+      <div class="section">
+        <input
+          class="sectionSearch"
+          type="text"
+          id="searchInput"
+          placeholder="Search directory"
+          ;
+        />
+        <ul class="resultList" id="list"></ul>
+        <p class="sectionDesc">or</p>
+        <button class="sectionBtn" onclick="window.location.href='./all.html';">
+          View all sites
+        </button>
+        <button class="sectionBtn" onclick="window.location.href='./add.html';">
+          Add Site!
+        </button>
+      </div>
+      <div class="section">
+        <h3 class="sectionTitle">Recently added</h3>
+        <ul class="sectionBox">
+          <li>
+            <a id="latestSite" target="_blank">Loading...</a>
+          </li>
+        </ul>
+      </div>
+      <script src="./javascript/listSites.js"></script>
+    </main>
+    <footer>
+      <p class="footerDesc">Made by Michael, Luca and Dominik for LA1304</p>
+      <a
+        href="https://github.com/NotMHX/LA1304"
+        class="footerLink"
+        target="_blank"
+        >Source Code</a
+      >
+    </footer>
+  </body>
+</html>
