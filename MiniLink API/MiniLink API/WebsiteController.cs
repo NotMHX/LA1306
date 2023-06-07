@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
+using System;
 
 namespace MiniLink_API
 {
@@ -27,13 +29,14 @@ namespace MiniLink_API
             }
             else
             {
-                return BadRequest();
+                return BadRequest("No sites to fetch.");
             }
         }
 
         [HttpPost("add")]
         public async Task<ActionResult<Website>> addSite(Website newSite)
         {
+            // ID Checker
             if (_db.Websites.Any())
             {
                 newSite.Id = _db.Websites.OrderByDescending(i => i.Id).First().Id + 1; // Gets the item in the list with the highest Id and adds 1
@@ -43,6 +46,28 @@ namespace MiniLink_API
                 newSite.Id = 1;
             }
 
+            // URL Checker
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(newSite.Weblink);
+                request.Timeout = 15000;
+                request.Method = "HEAD";
+                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                {
+                    if (response.StatusCode != HttpStatusCode.OK)
+                    {
+                        throw new Exception();
+                    }
+                }
+            }
+            catch
+            {
+                return BadRequest("URL doesn't exist.");
+            }
+
+
+
+            // Date Giver
             newSite.DateAdded = DateTime.Now;
 
             _db.Websites.Add(newSite);
