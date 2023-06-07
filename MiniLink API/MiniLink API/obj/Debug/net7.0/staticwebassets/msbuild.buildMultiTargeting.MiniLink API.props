@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MiniLink API.props" />
+</Project>
