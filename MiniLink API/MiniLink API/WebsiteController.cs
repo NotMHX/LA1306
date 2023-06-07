@@ -15,7 +15,7 @@ namespace MiniLink_API
             _db = db;
         }
 
-        [HttpGet]
+        [HttpGet("all")]
         public IActionResult getAllSites() 
         {
             List<Website> list = new();
@@ -31,7 +31,7 @@ namespace MiniLink_API
             }
         }
 
-        [HttpPost]
+        [HttpPost("add")]
         public async Task<ActionResult<Website>> addSite(Website newSite)
         {
             if (_db.Websites.Any())
@@ -50,14 +50,14 @@ namespace MiniLink_API
             return Ok(_db.Websites.SingleOrDefault(r => r.Id == newSite.Id));
         }
 
-        [HttpDelete]
+        [HttpDelete("id")]
         public async Task<ActionResult<Website>> deleteSiteWithId(int id) 
         {
             Website site = _db.Websites.SingleOrDefault(r => r.Id == id);
             _db.Websites.Remove(site);
             await _db.SaveChangesAsync();
 
-            return Ok($"Deleted website {id}");
+            return Ok($"Deleted website {id}: {site.Title}");
         }
     }
 }

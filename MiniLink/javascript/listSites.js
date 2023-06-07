@@ -17,7 +17,7 @@ document.getElementById("searchInput").addEventListener("input", async (e) => {
 });
 
 async function fetchSites(page) {
-  const response = await fetch("https://localhost:7082/");
+  const response = await fetch("https://localhost:7082/api/Website/all");
   // replace this with the database
   const json = await response.json();
   switch (page) {
