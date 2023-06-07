@@ -2,12 +2,12 @@
 {
     public class Website
     {
-        public required int Id;
+        public required int Id { get; set; }
 
-        public required string Title;
+        public required string Title { get; set; }
 
-        public required string Weblink;
+        public required string Weblink { get; set; }
 
-        public required DateTime DateAdded;
+        public required DateTime DateAdded { get; set; }
     }
 }
