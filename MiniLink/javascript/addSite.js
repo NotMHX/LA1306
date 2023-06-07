@@ -32,6 +32,9 @@ async function addSite() {
     document.getElementById("nameInput").value = "";
     document.getElementById("websiteInput").value = "";
   } else {
-    alert(`${result.statusText}. Try checking if the URL is reachable.`);
+    alert(`${result.statusText}
+    - URL must be pingable
+    - URL must contain 'https://'
+    - URL may already exist in directory`);
   }
 }

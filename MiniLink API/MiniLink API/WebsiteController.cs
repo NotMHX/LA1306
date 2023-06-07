@@ -46,6 +46,22 @@ namespace MiniLink_API
                 newSite.Id = 1;
             }
 
+            // Duplicate Checker
+            try
+            {
+                foreach (Website w in _db.Websites)
+                {
+                    if (w.Weblink == newSite.Weblink)
+                    {
+                        throw new Exception();
+                    }
+                }
+            }
+            catch
+            {
+                return BadRequest("Entry exists already.");
+            }
+
             // URL Checker
             try
             {
