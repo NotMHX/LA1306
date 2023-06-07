@@ -18,6 +18,8 @@ document.getElementById("searchInput").addEventListener("input", async (e) => {
 
 async function fetchSites(page) {
   const response = await fetch("https://localhost:7082/api/Website/all");
+
+
   // replace this with the database
   const json = await response.json();
   switch (page) {
@@ -77,9 +79,8 @@ function listSites(webList) {
 
     // created date
     let websiteAdded = document.createElement("li");
-    websiteAdded.innerHTML = `<img src=./img/calendar.png alt="Date Added">${
-      webList[e].dateAdded.split("T")[0]
-    }`;
+    websiteAdded.innerHTML = `<img src=./img/calendar.png alt="Date Added">${webList[e].dateAdded.split("T")[0]
+      }`;
     console.log(`Created date ${webList[e].dateAdded}`);
     list.append(websiteAdded);
 
@@ -117,12 +118,21 @@ function listLatest(website) {
   entry.innerHTML = splitLink(latestElement.weblink);
 }
 
-function deleteSite(website) {
-  alert(
-    `The website ${website.weblink} would get deleted from the database now. `
-  );
+async function deleteSite(website) {
 
-  // deleteOne with mongodb
+  console.log(website.id)
+  await fetch("https://localhost:7082/api/Website/id"
+    , {
+      method: "DELETE",
+      body: JSON.stringify({
+        id: website.id
+
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    });
+
 }
 
 function splitLink(link) {

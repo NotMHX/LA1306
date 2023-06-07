@@ -69,3 +69,4 @@ C:\Users\Michael Schule\Desktop\BBB\Jahr 2\Lernatelier\1306\LA1306\MiniLink API\
 C:\Users\Michael Schule\Desktop\BBB\Jahr 2\Lernatelier\1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.genruntimeconfig.cache
 C:\Users\Michael Schule\Desktop\BBB\Jahr 2\Lernatelier\1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\ref\MiniLink API.dll
 C:\Users\Michael Schule\Desktop\BBB\Jahr 2\Lernatelier\1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll

@@ -998,19 +998,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Michael Schule\\.nuget\\packages\\": {}
+    "C:\\Users\\Luca Dal Corso\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Michael Schule\\Desktop\\BBB\\Jahr 2\\Lernatelier\\1306\\LA1306\\MiniLink API\\MiniLink API\\MiniLink API.csproj",
+      "projectUniqueName": "C:\\La1306\\LA1306\\MiniLink API\\MiniLink API\\MiniLink API.csproj",
       "projectName": "MiniLink API",
-      "projectPath": "C:\\Users\\Michael Schule\\Desktop\\BBB\\Jahr 2\\Lernatelier\\1306\\LA1306\\MiniLink API\\MiniLink API\\MiniLink API.csproj",
-      "packagesPath": "C:\\Users\\Michael Schule\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Michael Schule\\Desktop\\BBB\\Jahr 2\\Lernatelier\\1306\\LA1306\\MiniLink API\\MiniLink API\\obj\\",
+      "projectPath": "C:\\La1306\\LA1306\\MiniLink API\\MiniLink API\\MiniLink API.csproj",
+      "packagesPath": "C:\\Users\\Luca Dal Corso\\.nuget\\packages\\",
+      "outputPath": "C:\\La1306\\LA1306\\MiniLink API\\MiniLink API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Michael Schule\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Luca Dal Corso\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
