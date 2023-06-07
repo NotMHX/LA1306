@@ -1,0 +1,35 @@
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\appsettings.Development.json
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\appsettings.json
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\MiniLink API.exe
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\MiniLink API.deps.json
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\MiniLink API.runtimeconfig.json
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\MiniLink API.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\MiniLink API.pdb
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.csproj.AssemblyReference.cache
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.GeneratedMSBuildEditorConfig.editorconfig
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.AssemblyInfoInputs.cache
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.AssemblyInfo.cs
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.csproj.CoreCompileInputs.cache
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.MvcApplicationPartsAssemblyInfo.cs
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.MvcApplicationPartsAssemblyInfo.cache
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\staticwebassets\msbuild.MiniLink API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\staticwebassets\msbuild.build.MiniLink API.props
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MiniLink API.props
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.MiniLink API.props
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\staticwebassets.pack.json
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\staticwebassets.build.json
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\staticwebassets.development.json
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\scopedcss\bundle\MiniLink API.styles.css
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.csproj.CopyComplete
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\refint\MiniLink API.dll
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.pdb
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\MiniLink API.genruntimeconfig.cache
+C:\La1306\LA1306\MiniLink API\MiniLink API\obj\Debug\net7.0\ref\MiniLink API.dll
