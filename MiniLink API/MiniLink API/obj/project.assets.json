@@ -66,22 +66,6 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.InMemory/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.5"
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
@@ -379,20 +363,6 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/7.0.5": {
-      "sha512": "y3S/A/0uJX7KOhppC3xqyta6Z0PRz0qPLngH5GFu4GZ7/+Sw2u/amf7MavvR5GfZjGabGcohMpsRSahMmpF9gA==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.inmemory/7.0.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
-        "microsoft.entityframeworkcore.inmemory.7.0.5.nupkg.sha512",
-        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
@@ -993,24 +963,23 @@
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.4",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
-      "Microsoft.EntityFrameworkCore.InMemory >= 7.0.5",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Luca Dal Corso\\.nuget\\packages\\": {}
+    "C:\\Users\\Michael Schule\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\La1306\\LA1306\\MiniLink API\\MiniLink API\\MiniLink API.csproj",
+      "projectUniqueName": "C:\\Users\\Michael Schule\\Desktop\\BBB\\Jahr 2\\Lernatelier\\1306\\LA1306\\MiniLink API\\MiniLink API\\MiniLink API.csproj",
       "projectName": "MiniLink API",
-      "projectPath": "C:\\La1306\\LA1306\\MiniLink API\\MiniLink API\\MiniLink API.csproj",
-      "packagesPath": "C:\\Users\\Luca Dal Corso\\.nuget\\packages\\",
-      "outputPath": "C:\\La1306\\LA1306\\MiniLink API\\MiniLink API\\obj\\",
+      "projectPath": "C:\\Users\\Michael Schule\\Desktop\\BBB\\Jahr 2\\Lernatelier\\1306\\LA1306\\MiniLink API\\MiniLink API\\MiniLink API.csproj",
+      "packagesPath": "C:\\Users\\Michael Schule\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Michael Schule\\Desktop\\BBB\\Jahr 2\\Lernatelier\\1306\\LA1306\\MiniLink API\\MiniLink API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Luca Dal Corso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Michael Schule\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1041,10 +1010,6 @@
             "version": "[7.0.4, )"
           },
           "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[7.0.5, )"
-          },
-          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[7.0.5, )"
           },

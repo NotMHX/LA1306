@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MiniLink_API.Controllers
+namespace MiniLink_API
 {
     [Route("api/[controller]")]
     [ApiController]
