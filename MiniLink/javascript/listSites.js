@@ -77,8 +77,10 @@ function listSites(webList) {
 
     // created date
     let websiteAdded = document.createElement("li");
-    websiteAdded.innerHTML = `<img src=./img/calendar.png alt="Date Added">${webList[e].created}`;
-    console.log(`Created date ${webList[e].created}`);
+    websiteAdded.innerHTML = `<img src=./img/calendar.png alt="Date Added">${
+      webList[e].dateAdded.split("T")[0]
+    }`;
+    console.log(`Created date ${webList[e].dateAdded}`);
     list.append(websiteAdded);
 
     let linkText = splitLink(webList[e].weblink);
@@ -124,5 +126,5 @@ function deleteSite(website) {
 }
 
 function splitLink(link) {
-  return link.split(".")[1] + "." + link.split(".")[2];
+  return link.split("/")[2];
 }

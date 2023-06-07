@@ -65,8 +65,6 @@ namespace MiniLink_API
                 return BadRequest("URL doesn't exist.");
             }
 
-
-
             // Date Giver
             newSite.DateAdded = DateTime.Now;
 
