@@ -19,7 +19,6 @@ document.getElementById("searchInput").addEventListener("input", async (e) => {
 async function fetchSites(page) {
   const response = await fetch("https://localhost:7082/api/Website/all");
 
-
   // replace this with the database
   const json = await response.json();
   switch (page) {
@@ -61,6 +60,7 @@ function setList(webList) {
 
 function listSites(webList) {
   const websiteContainer = document.getElementById("websiteList");
+  websiteContainer.innerHTML = "";
 
   for (let e in webList) {
     // section box
@@ -79,8 +79,9 @@ function listSites(webList) {
 
     // created date
     let websiteAdded = document.createElement("li");
-    websiteAdded.innerHTML = `<img src=./img/calendar.png alt="Date Added">${webList[e].dateAdded.split("T")[0]
-      }`;
+    websiteAdded.innerHTML = `<img src=./img/calendar.png alt="Date Added">${
+      webList[e].dateAdded.split("T")[0]
+    }`;
     console.log(`Created date ${webList[e].dateAdded}`);
     list.append(websiteAdded);
 
@@ -97,7 +98,7 @@ function listSites(webList) {
     let websiteDelete = document.createElement("li");
     let deleteBtn = document.createElement("button");
     deleteBtn.innerHTML = "Delete";
-    deleteBtn.addEventListener("click", () => deleteSite(webList[e]));
+    deleteBtn.addEventListener("click", () => deleteSite(webList[e].id));
     websiteDelete.append(deleteBtn);
     list.append(websiteDelete);
   }
@@ -112,27 +113,28 @@ function listSites(webList) {
 }
 
 function listLatest(website) {
-  const latestElement = website[website.length - 1];
+  const random = getRandomInt(website.length);
+  const latestElement = website[random];
   const entry = document.getElementById("latestSite");
   entry.href = latestElement.weblink;
   entry.innerHTML = splitLink(latestElement.weblink);
 }
 
-async function deleteSite(website) {
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 
-  console.log(website.id)
-  await fetch("https://localhost:7082/api/Website/id"
-    , {
-      method: "DELETE",
-      body: JSON.stringify({
-        id: website.id
+async function deleteSite(id) {
+  console.log(id);
 
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8"
-      }
-    });
+  await fetch(`https://localhost:7082/api/Website/id?id=${id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+    },
+  });
 
+  await fetchSites("all");
 }
 
 function splitLink(link) {
